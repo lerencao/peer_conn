@@ -6,5 +6,5 @@ One can start http clients connecting to mulit api domains, and use it by name a
 
 ### TODO
 
-- [] add tests.
-- [] write examples.
+- [ ] add tests.
+- [ ] write examples.
