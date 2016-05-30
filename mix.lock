@@ -1,0 +1,3 @@
+%{"connection": {:hex, :connection, "1.0.2", "f4a06dd3ecae4141aa66f94ce92ea4c4b8753069472814932f1cadbc3078ab80", [:mix], []},
+  "ex_doc": {:hex, :ex_doc, "0.11.5", "0dc51cb84f8312162a2313d6c71573a9afa332333d8a332bb12540861b9834db", [:mix], [{:earmark, "~> 0.1.17 or ~> 0.2", [hex: :earmark, optional: true]}]},
+  "redix": {:hex, :redix, "0.3.6", "882b3b9a81ac1245277a0ee60a0f33fef39dc5f988f513b605c8c93f40f7206f", [:mix], [{:connection, "~> 1.0.0", [hex: :connection, optional: false]}]}}

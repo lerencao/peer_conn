@@ -15,7 +15,7 @@ defmodule PeerConn.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     [
-      applications: [:logger]
+      applications: [:logger | applications(Mix.env)]
     ]
   end
 
@@ -29,6 +29,18 @@ defmodule PeerConn.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
+    [
+      {:ex_doc, ">= 0.0.0", only: :docs},
+      {:redix, ">= 0.0.0", only: :test}
+    ]
+  end
+
+  defp applications(:test) do
+    [:redix]
+  end
+  defp applications(_) do
     []
   end
+
+
 end
