@@ -86,9 +86,9 @@ defmodule PeerConn do
       {:ok, child, _info} ->
         {:ok, child}
       {:error, {:already_started, _child}} ->
-        {:error, :aready_created}
+        {:error, :already_created}
       {:error, :already_present} ->
-        {:error, :already_started}
+        {:error, :already_created}
       {:error, _term} = err->
         err
     end
